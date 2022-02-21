@@ -14,5 +14,10 @@ const capitalize = (valueLetter) => {
 // console.log(capitalize("wekesa"));
 
 const lastLetter = (last) => {
-    return 
+    //return the last letter of a string
+    // return last.charAt(last.length - 1); 
+    //return the fist letter of the string
+    return last.charAt(0);
 }
+
+console.log(lastLetter("wekesa"))
