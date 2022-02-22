@@ -5,17 +5,39 @@
 // }
 
 // console.log(randomNum());
+let randomNumber = Math.floor(Math.random() * 3) + 1;
 
 const computerPlay = () => {
-    let randomNumber = Math.floor(Math.random() * 3) + 1;
     if (randomNumber === 1) {
-        console.log("Rock");
+        return "Paper";
     } else if (randomNumber === 2) {
-        console.log("Paper")
+        return "Rock"
     } else {
-        console.log("scissors")
+        return "Scissors"
     }
 
 }
 
-computerPlay();
+// console.log(computerPlay())
+
+// Play Round();
+
+const playRound = (playerSelection, computerSelection) => {
+    if (playerSelection === computerSelection) {
+        return "Huraaa!!!"
+    } else {
+        return "Not equal"
+    }
+}
+let playerSelection = "Rock"
+let computerSelection = computerPlay();
+
+// console.log(computerSelection)
+
+// const game = (value) => {
+//     for (let i = 0; i < 5; i++) {
+//         console.log(i + value);
+//     }
+// }
+
+// game(10)
